@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\IndustryConnectAutomationTesting\\IndustryconnectKG2023\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting.csproj": {}
+    "C:\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting.csproj": {}
   },
   "projects": {
-    "C:\\IndustryConnectAutomationTesting\\IndustryconnectKG2023\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting.csproj": {
+    "C:\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\IndustryConnectAutomationTesting\\IndustryconnectKG2023\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting.csproj",
+        "projectUniqueName": "C:\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting.csproj",
         "projectName": "IndustryConnectAutomationTesting",
-        "projectPath": "C:\\IndustryConnectAutomationTesting\\IndustryconnectKG2023\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting.csproj",
+        "projectPath": "C:\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting.csproj",
         "packagesPath": "C:\\Users\\cherath\\.nuget\\packages\\",
-        "outputPath": "C:\\IndustryConnectAutomationTesting\\IndustryconnectKG2023\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\obj\\",
+        "outputPath": "C:\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

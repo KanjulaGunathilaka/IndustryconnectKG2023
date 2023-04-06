@@ -27,5 +27,6 @@ else
     Console.WriteLine("user hasn't been logged in.");
 }
 
+//exit browser
 driver.Quit();
 

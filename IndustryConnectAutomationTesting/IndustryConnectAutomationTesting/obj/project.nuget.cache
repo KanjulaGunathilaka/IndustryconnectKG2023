@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/swuU/Gw6xTnaaReOFg1S5mUwwozgS1N7o+AmcKouQxmMsLs4YFjb0xYq0Ptc1+HMCXX1v4e5J4nJgzh31fhAw==",
+  "dgSpecHash": "Iy1JDh3A7953HqL03TGPWQ97R3hhxQyBitbAIZovCo7I+6A1RxUMSp0gYTQCwYSLTTcRaBpnaqbO/Qeu5Si21Q==",
   "success": true,
-  "projectFilePath": "C:\\IndustryConnectAutomationTesting\\IndustryconnectKG2023\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting.csproj",
+  "projectFilePath": "C:\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cherath\\.nuget\\packages\\microsoft.netcore.app\\2.2.8\\microsoft.netcore.app.2.2.8.nupkg.sha512",
     "C:\\Users\\cherath\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.8\\microsoft.netcore.dotnetapphost.2.2.8.nupkg.sha512",
