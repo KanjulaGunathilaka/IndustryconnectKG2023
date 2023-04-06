@@ -29,4 +29,5 @@ else
 
 //exit browser
 driver.Quit();
+driver.Close();
 
