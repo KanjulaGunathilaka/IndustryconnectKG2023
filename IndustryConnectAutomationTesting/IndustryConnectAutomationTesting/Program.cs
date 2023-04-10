@@ -1,5 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.Events;
+
 
 // open chrome browser
 IWebDriver driver = new ChromeDriver();
@@ -27,7 +29,67 @@ else
     Console.WriteLine("user hasn't been logged in.");
 }
 
-//exit browser
-driver.Quit();
-driver.Close();
+//Create new time record
 
+//Navigate Time and Material module
+IWebElement administration = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a/span"));
+administration.Click();
+
+IWebElement tmOption = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a"));
+tmOption.Click();
+
+//Click on create new button
+IWebElement createNewButton = driver.FindElement(By.XPath("//*[@id=\"container\"]/p/a"));
+createNewButton.Click();
+
+// select Time option from dropdown
+IWebElement dropdown = driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[1]/div/span[1]/span/span[2]/span"));
+dropdown.Click();
+
+IWebElement timeOption = driver.FindElement(By.XPath("//*[@id=\"TypeCode_listbox\"]/li[2]"));
+timeOption.Click();
+
+//Type code in to code textbox
+IWebElement codeTextbox = driver.FindElement(By.Id("Code"));
+codeTextbox.SendKeys("IC2023");
+
+//type description into description textbox
+IWebElement descriptionTextBox = driver.FindElement(By.Id("Description"));
+descriptionTextBox.SendKeys("IC2023");
+
+// type price into price per unit textbox
+IWebElement priceOverlap = driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[4]/div/span[1]/span/input[1]"));
+priceOverlap.Click();
+
+IWebElement priceTextbox = driver.FindElement(By.Id("Price"));
+priceTextbox.SendKeys("12");
+
+// click on save button
+IWebElement saveButton = driver.FindElement(By.Id("SaveButton"));
+saveButton.Click();
+Thread.Sleep(3000);
+
+//check if new time record has been created succussfully
+IWebElement goToLastPageButton = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[4]/a[4]/span"));
+goToLastPageButton.Click();
+
+IWebElement newCode = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[1]"));
+
+if (newCode.Text == "IC2023")
+{
+    Console.WriteLine("New record has been created successfully.");
+}
+else
+{
+    Console.WriteLine("Record hasn't been created.");
+}
+
+
+
+
+
+
+
+
+// Close Driver
+//driver.Quit();
