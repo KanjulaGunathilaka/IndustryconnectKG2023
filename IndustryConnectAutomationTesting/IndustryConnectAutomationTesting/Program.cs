@@ -45,6 +45,7 @@ createNewButton.Click();
 // select Time option from dropdown
 IWebElement dropdown = driver.FindElement(By.XPath("//*[@id=\"TimeMaterialEditForm\"]/div/div[1]/div/span[1]/span/span[2]/span"));
 dropdown.Click();
+Thread.Sleep(3000);
 
 IWebElement timeOption = driver.FindElement(By.XPath("//*[@id=\"TypeCode_listbox\"]/li[2]"));
 timeOption.Click();
@@ -84,12 +85,51 @@ else
     Console.WriteLine("Record hasn't been created.");
 }
 
+//Click on Edit Button
+IWebElement editButton = driver.FindElement(By.XPath("//tbody/tr[last()]/td[5]/a[1]"));
+editButton.Click();
+Thread.Sleep(3000);
 
+//Edit Code in Code Textbox
+IWebElement editCodeTextbox = driver.FindElement(By.Id("Code"));
+editCodeTextbox.Clear();
+editCodeTextbox.SendKeys("IC2023Edited");
 
+//Edit Description in Description Textbox
+IWebElement editDescriptionTextBox = driver.FindElement(By.Id("Description"));
+editDescriptionTextBox.Clear();
+editDescriptionTextBox.SendKeys("IC2023Edited");
 
+//Edit Price in Price Textbox
+//IWebElement editPriceTextbox = driver.FindElement(By.Id("Price"));
+//editPriceTextbox.SendKeys("14");
 
+//Click on save button
+IWebElement editSaveButton = driver.FindElement(By.Id("SaveButton"));
+editSaveButton.Click();
+Thread.Sleep(3000);
 
+// Clock on goToLastPage Button
+IWebElement editGoToLastPageButton = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[4]/a[4]/span"));
+editGoToLastPageButton.Click();
 
+IWebElement editedCode = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[1]"));
+
+if (editedCode.Text == "IC2023Edited")
+{
+    Console.WriteLine("New record has been edited successfully.");
+}
+else
+{
+    Console.WriteLine("Record hasn't been edited.");
+}
+
+//Click on delete button
+IWebElement deleteButton = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[5]/a[2]"));
+deleteButton.Click();
+
+IAlert simpleAlert = driver.SwitchTo().Alert();
+simpleAlert.Accept();
 
 // Close Driver
-//driver.Quit();
+driver.Quit();
