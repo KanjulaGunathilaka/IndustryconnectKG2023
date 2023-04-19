@@ -12,19 +12,24 @@ using IndustryConnectAutomationTesting.Utilities;
 namespace IndustryConnectAutomationTesting.Tests
 {
     [TestFixture]
+    [Parallelizable]
     public class TMTests : CommonDriver
     {
+        LoginPage loginPageObj = new LoginPage();
+        HomePage homePageObj = new HomePage();
+        TMPage tmPageObject = new TMPage();
+
         [SetUp]
         public void LoginActions()
         {
             driver = new ChromeDriver();
 
             // Login page object initialization and definition
-            LoginPage loginPageObj = new LoginPage();
-            loginPageObj.LoginSteps(driver);
+            
+             loginPageObj.LoginSteps(driver);
 
             // Home page object initialization and definition
-            HomePage homePageObj = new HomePage();
+            
             homePageObj.GoTOTMPage(driver);
         }
 
@@ -32,7 +37,7 @@ namespace IndustryConnectAutomationTesting.Tests
         public void CreateTM_Test()
         {
             // TM page object initialization and definition
-            TMPage tmPageObject = new TMPage();
+            
             tmPageObject.CreateTMPage(driver);
         }
 
@@ -41,8 +46,7 @@ namespace IndustryConnectAutomationTesting.Tests
         {
 
             // TM page object initialization and definition
-            TMPage tmPageObject = new TMPage();
-            tmPageObject.CreateTMPage(driver);
+            
             tmPageObject.EditTMPage(driver);
         }
 
@@ -51,15 +55,14 @@ namespace IndustryConnectAutomationTesting.Tests
         {
 
             // TM page object initialization and definition
-            TMPage tmPageObject = new TMPage();
-            tmPageObject.CreateTMPage(driver);
+            
             tmPageObject.DeleteTM_Page(driver);
         }
 
         [TearDown]
         public void CloseTestRun()
         {
-            driver.Close();
+            driver.Quit();
         }
 
     }
