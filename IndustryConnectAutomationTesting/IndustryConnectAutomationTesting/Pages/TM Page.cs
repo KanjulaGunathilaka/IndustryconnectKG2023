@@ -133,5 +133,20 @@ namespace IndustryConnectAutomationTesting.Pages
             IWebElement deletedCode = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[1]"));
             Assert.IsFalse(deletedCode.Text == "IC2023Edited", "Code is not deleted.");
         }
+
+        internal void CreateTMPage(IWebDriver driver)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void EditTMPage(IWebDriver driver)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void DeleteTM_Page(IWebDriver driver)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

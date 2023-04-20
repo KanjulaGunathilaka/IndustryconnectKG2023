@@ -24,9 +24,7 @@ namespace IndustryConnectAutomationTesting.Tests
         {
             driver = new ChromeDriver();
 
-           
-            
-            loginPageObj.LoginSteps(driver);
+           loginPageObj.LoginSteps(driver);
             homePageObj.GoTOTMPage();
 
         }
