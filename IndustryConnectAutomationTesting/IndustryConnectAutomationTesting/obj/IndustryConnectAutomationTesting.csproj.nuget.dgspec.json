@@ -53,10 +53,6 @@
               "target": "Package",
               "version": "[17.5.0, )"
             },
-            "Microsoft.NETCore.Platforms": {
-              "target": "Package",
-              "version": "[7.0.1, )"
-            },
             "NUnit": {
               "target": "Package",
               "version": "[3.13.3, )"

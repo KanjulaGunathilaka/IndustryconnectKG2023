@@ -56,7 +56,7 @@ namespace IndustryConnectAutomationTesting.Tests
 
             // TM page object initialization and definition
             
-            tmPageObject.DeleteTM_Page(driver);
+            tmPageObject.DeleteTMPage(driver);
         }
 
         [TearDown]

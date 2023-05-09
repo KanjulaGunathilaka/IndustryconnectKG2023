@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OBQZr8PptfyvB13FUgjv+M+GBPCswZtmHpaQvpwfHbgQxuoiiUa9tv3tp1t7o4bj6/N6piHkNQDwwfTvBTn+pQ==",
+  "dgSpecHash": "2slTwqd0NYVB9zeAOlAq7ryjAsXTfTiJS2zeuzJxHttu7FP5y8yS1YLHoENWDsdQShT6/19oAYcQlJH17HvUyQ==",
   "success": true,
   "projectFilePath": "C:\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting\\IndustryConnectAutomationTesting.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,7 @@
     "C:\\Users\\cherath\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\1.0.3\\microsoft.dotnet.platformabstractions.1.0.3.nupkg.sha512",
     "C:\\Users\\cherath\\.nuget\\packages\\microsoft.extensions.dependencymodel\\1.0.3\\microsoft.extensions.dependencymodel.1.0.3.nupkg.sha512",
     "C:\\Users\\cherath\\.nuget\\packages\\microsoft.net.test.sdk\\17.5.0\\microsoft.net.test.sdk.17.5.0.nupkg.sha512",
-    "C:\\Users\\cherath\\.nuget\\packages\\microsoft.netcore.platforms\\7.0.1\\microsoft.netcore.platforms.7.0.1.nupkg.sha512",
+    "C:\\Users\\cherath\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\cherath\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\cherath\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.5.0\\microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
     "C:\\Users\\cherath\\.nuget\\packages\\microsoft.testplatform.testhost\\17.5.0\\microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
